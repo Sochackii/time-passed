@@ -3,9 +3,9 @@ import time
 class KC:
     
     def __init__(self):
-        self.czas = time.clock_gettime(time.CLOCK_MONOTONIC_RAW)
+        self.Time = time.clock_gettime(time.CLOCK_MONOTONIC_RAW)
         
-    def dlugosc(self):
-        self.czas2= time.clock_gettime(time.CLOCK_MONOTONIC_RAW)
-        print(self.czas2-self.czas)
-        self.czas = self.czas2
+    def TimePassed(self):
+        self.Time2= time.clock_gettime(time.CLOCK_MONOTONIC_RAW)
+        print(self.Time2-self.Time)
+        self.Time = self.Time2
